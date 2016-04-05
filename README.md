@@ -12,7 +12,7 @@ The recommended way to install composer packages is:
 composer require k1low/property-enum
 ```
 
-## Propety Example
+## Property Example
 
 ```php
 class ArticlesTable extends Table
