@@ -18,7 +18,7 @@ class PropertyStrategyTest extends TestCase
     public function setUp(){
         parent::setUp();
         $this->Table = new Table();
-        $this->Table->enum = [
+        $this->Table->enums = [
             'status' => [
                 'publish' => 'Published',
                 'draft' => 'Drafted',

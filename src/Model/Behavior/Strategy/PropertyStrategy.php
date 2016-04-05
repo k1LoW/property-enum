@@ -11,6 +11,6 @@ class PropertyStrategy extends AbstractStrategy
      *
      */
     public function enum(array $config = []){
-        return (array)$this->_table->enum[$this->config('field')];
+        return (array)$this->_table->enums[$this->config('field')];
     }
 }
