@@ -26,7 +26,7 @@ class PropertyStrategyTest extends TestCase
             ],
         ];
         $this->Strategy = new PropertyStrategy('status', $this->Table);
-        $this->Strategy->initialize();
+        $this->Strategy->initialize([]);
     }
 
     public function tearDown()
