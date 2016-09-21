@@ -2,9 +2,9 @@
 
 namespace PropertyEnum\Test\TestCase\Model\Behavior\Strategy;
 
-use PropertyEnum\Model\Behavior\Strategy\PropertyStrategy;
 use Cake\ORM\Table;
 use Cake\TestSuite\TestCase;
+use PropertyEnum\Model\Behavior\Strategy\PropertyStrategy;
 
 class PropertyStrategyTest extends TestCase
 {
@@ -15,7 +15,8 @@ class PropertyStrategyTest extends TestCase
      * setUp
      *
      */
-    public function setUp(){
+    public function setUp()
+    {
         parent::setUp();
         $this->Table = new Table();
         $this->Table->enums = [

@@ -11,10 +11,11 @@
     "require": {
         "php": ">=5.4.16",
         "cakephp/cakephp": "~3.0",
-        "cakedc/enum": "dev-master"
+        "cakedc/enum": "~1.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "*"
+        "phpunit/phpunit": "*",
+        "cakephp/cakephp-codesniffer": "^2.1"
     },
     "autoload": {
         "psr-4": {

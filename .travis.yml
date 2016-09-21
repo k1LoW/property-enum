@@ -5,8 +5,21 @@ php:
   - 5.5
   - 5.6
 
+env:
+  global:
+    - DEFAULT=1
+
+matrix:
+  fast_finish: true
+
+  include:
+    - php: 5.6
+      env: PHPCS=1 DEFAULT=0
+
 before_script:
   - composer self-update
   - composer install
 
-script: vendor/bin/phpunit
+script:
+  - sh -c "if [ '$DEFAULT' = '1' ]; then phpunit --stderr; fi"
+  - sh -c "if [ '$PHPCS' = '1' ]; then ./vendor/bin/phpcs -p --extensions=php --standard=vendor/cakephp/cakephp-codesniffer/CakePHP ./src ./tests; fi"
