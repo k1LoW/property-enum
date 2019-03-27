@@ -4,7 +4,6 @@ namespace PropertyEnum\Model\Behavior\Strategy;
 use CakeDC\Enum\Model\Behavior\Strategy\AbstractStrategy;
 use Cake\Core\Configure;
 
-
 class PropertyStrategy extends AbstractStrategy
 {
     /**
