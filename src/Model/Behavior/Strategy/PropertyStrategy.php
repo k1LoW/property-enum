@@ -14,6 +14,7 @@ class PropertyStrategy extends AbstractStrategy
         if (version_compare(Configure::version(), '3.4.0') < 0) {
             return (array)$this->_table->enums[$this->config('field')];
         }
+
         return (array)$this->_table->enums[$this->getConfig('field')];
     }
 }
