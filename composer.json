@@ -10,8 +10,8 @@
     "license": "MIT",
     "require": {
         "php": ">=5.4.16",
-        "cakephp/cakephp": "<3.6",
-        "cakedc/enum": "<1.4.0"
+        "cakephp/cakephp": "^3.6",
+        "cakedc/enum": ">=1.4.0"
     },
     "require-dev": {
         "phpunit/phpunit": "<6.0",
