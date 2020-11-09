@@ -1,4 +1,4 @@
-# Property based enum plugin for CakePHP 3 [![Travis](https://img.shields.io/travis/k1LoW/property-enum.svg)](https://travis-ci.org/k1LoW/property-enum)
+# Property based enum plugin for CakePHP 4 [![Travis](https://img.shields.io/travis/k1LoW/property-enum.svg)](https://travis-ci.org/k1LoW/property-enum)
 
 This plugin is PropertyStrategy of [CakeDC/Enum](https://github.com/CakeDC/Enum)
 
