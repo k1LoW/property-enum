@@ -14,7 +14,6 @@ class AutoSetComponent extends Component
     {
         $controller = $this->_registry->getController();
         $table = $controller->loadModel();
-        $tableAlias = $table->table();
         if (empty($table->enums)) {
             return;
         }
