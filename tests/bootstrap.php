@@ -37,4 +37,4 @@ Configure::write('App', [
         'templates' => [dirname(__FILE__) . DS . 'test_app' . DS . 'TestApp' . DS . 'Template' . DS],
     ]
 ]);
-Plugin::load('PropertyEnum', ['path' => dirname(dirname(__FILE__)) . DS]);
+//Plugin::load('PropertyEnum', ['path' => dirname(dirname(__FILE__)) . DS]);

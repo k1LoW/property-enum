@@ -1,8 +1,8 @@
 <?php
+
 namespace PropertyEnum\Controller\Component;
 
 use Cake\Controller\Component;
-use Cake\ORM\TableRegistry;
 use Cake\Utility\Inflector;
 
 class AutoSetComponent extends Component
