@@ -15,7 +15,7 @@ class PropertyStrategyTest extends TestCase
      * setUp
      *
      */
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
         $this->Table = new Table();
@@ -23,14 +23,16 @@ class PropertyStrategyTest extends TestCase
             'status' => [
                 'publish' => 'Published',
                 'draft' => 'Drafted',
-                'archive' => 'Archived'
+                'archive' => 'Archived',
             ],
         ];
         $this->Strategy = new PropertyStrategy('status', $this->Table);
-        $this->Strategy->initialize([]);
+        $this->Strategy->initialize([
+            'errorMessage' => 'The provided value is invalid',
+        ]);
     }
 
-    public function tearDown()
+    public function tearDown(): void
     {
         parent::tearDown();
         unset($this->Strategy);
@@ -42,7 +44,7 @@ class PropertyStrategyTest extends TestCase
         $expected = [
             'publish' => 'Published',
             'draft' => 'Drafted',
-            'archive' => 'Archived'
+            'archive' => 'Archived',
         ];
         $this->assertEquals($expected, $result);
     }
